@@ -2,7 +2,7 @@
 //Alice Shen, George Lambeth 
 //EECS 280 W14 project 2
 //p2.cpp
-
+//Let me push this to the git! ALice from mac air.
 
 #include <iostream>
 #include <stdlib.h>
