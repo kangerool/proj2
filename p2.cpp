@@ -2,10 +2,6 @@
 //Alice Shen, George Lambeth 
 //EECS 280 W14 project 2
 //p2.cpp
-//deny any illegal pushes! Alice form CAEN
-=======
-//Let me push this to the git! ALice from mac air.
->>>>>>> origin/master
 
 #include <iostream>
 #include <stdlib.h>
