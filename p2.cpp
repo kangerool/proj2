@@ -78,24 +78,7 @@ static int accumulateHelper(list_t list, int (*fn)(int, int), int result) {
 }
 
 int accumulate(list_t list, int (*fn)(int, int), int identity) {
-    /* 
-    // REQUIRES: fn must be associative.  // EFFECTS: return identity if list is empty 
-    // return fn(list_first(list), 
-    // accumulate(list_rest(list), fn, identity)) 
-    // otherwise. Be sure to make above code tail-recursive! 
-    // 
-    // For example, if you have the following function: 
-    // 
-    // int add(int x, int y); 
-    // 
-    // Then the following invocation returns the sum of all elements: 
-    // 
-    // accumulate(list, add, 0);                                                                   
-    // 
-    // The "identity" argument is typically the value for which 
-    // fn(X, identity) == X, for any X. 
-    */ 
-   if (list_isEmpty(list) == true) {
+    if (list_isEmpty(list) == true) {
          return identity;
     }
     return accumulate(list_rest(list), fn, fn(identity, list_first(list))); 
@@ -144,7 +127,6 @@ bool isOdd(int x) {
 }
 list_t filter_odd(list_t list) {
 	return filter(list, isOdd);
-
 	//return reverse(oddHelper(list, list_make()));
 }
 
@@ -201,15 +183,19 @@ list_t rotate(list_t list, unsigned int n ) {
 }
 ///
 
-static list_t insertHelper(list_t leftReversed, list_t right, list_t second, unsigned int count) {
+static list_t insertHelper(list_t leftReversed,
+                           list_t right, list_t second,
+                           unsigned int count           ) {
 
     if (count == 0) {
         // assemble the result as <left + second + right>
         return append(append(reverse(leftReversed), second),right);
     }
+    
     count --;
     leftReversed = list_make(list_first(right), leftReversed);
     right = list_rest(right);
+    
     return insertHelper(leftReversed, right, second, count);
 }
 
@@ -218,7 +204,6 @@ static list_t insertHelper(list_t leftReversed, list_t right, list_t second, uns
 list_t insert_list(list_t first, list_t second, unsigned int n) {
     return insertHelper(list_make(), first, second, n);
 }
-
 
 ///
 
