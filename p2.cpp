@@ -2,7 +2,7 @@
 //Alice Shen, George Lambeth 
 //EECS 280 W14 project 2
 //p2.cpp
-
+//deny any illegal pushes! Alice form CAEN
 
 #include <iostream>
 #include <stdlib.h>
