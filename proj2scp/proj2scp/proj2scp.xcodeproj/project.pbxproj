@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00767EC818A03426002F5F44 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00767EC718A03426002F5F44 /* main.cpp */; };
-		00767ECA18A03426002F5F44 /* proj2scp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00767EC918A03426002F5F44 /* proj2scp.1 */; };
+		00767EDB18A035FA002F5F44 /* recursive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00767EDA18A035FA002F5F44 /* recursive.cpp */; };
+		00767EDD18A0364D002F5F44 /* p2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00767EDC18A0364C002F5F44 /* p2.cpp */; };
+		00767EDF18A04443002F5F44 /* simple_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00767EDE18A04443002F5F44 /* simple_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +19,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				00767ECA18A03426002F5F44 /* proj2scp.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +26,11 @@
 
 /* Begin PBXFileReference section */
 		00767EC418A03426002F5F44 /* proj2scp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj2scp; sourceTree = BUILT_PRODUCTS_DIR; };
-		00767EC718A03426002F5F44 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		00767EC918A03426002F5F44 /* proj2scp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = proj2scp.1; sourceTree = "<group>"; };
+		00767ED618A03589002F5F44 /* p2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = p2.h; sourceTree = "<group>"; };
+		00767ED818A03589002F5F44 /* recursive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recursive.h; sourceTree = "<group>"; };
+		00767EDA18A035FA002F5F44 /* recursive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recursive.cpp; sourceTree = "<group>"; };
+		00767EDC18A0364C002F5F44 /* p2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = p2.cpp; sourceTree = "<group>"; };
+		00767EDE18A04443002F5F44 /* simple_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,11 @@
 		00767EC618A03426002F5F44 /* proj2scp */ = {
 			isa = PBXGroup;
 			children = (
-				00767EC718A03426002F5F44 /* main.cpp */,
-				00767EC918A03426002F5F44 /* proj2scp.1 */,
+				00767EDE18A04443002F5F44 /* simple_test.cpp */,
+				00767EDC18A0364C002F5F44 /* p2.cpp */,
+				00767EDA18A035FA002F5F44 /* recursive.cpp */,
+				00767ED618A03589002F5F44 /* p2.h */,
+				00767ED818A03589002F5F44 /* recursive.h */,
 			);
 			path = proj2scp;
 			sourceTree = "<group>";
@@ -117,7 +123,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00767EC818A03426002F5F44 /* main.cpp in Sources */,
+				00767EDD18A0364D002F5F44 /* p2.cpp in Sources */,
+				00767EDF18A04443002F5F44 /* simple_test.cpp in Sources */,
+				00767EDB18A035FA002F5F44 /* recursive.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
